@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DYNAMIND - Pengumuman Finalis</title>
+
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(to right, #e0f7f5, #ffffff);
+  text-align: center;
+}
+
+.header {
+  background: linear-gradient(to right, #2bb3a8, #1f8f87);
+  color: white;
+  padding: 50px 20px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.container {
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  margin: 20px auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+h1 { margin: 10px 0; }
+h2 { margin-bottom: 15px; }
+
+button {
+  padding: 12px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 25px;
+  background: #2bb3a8;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #1f8f87;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlight {
+  font-weight: bold;
+  color: #2bb3a8;
+  font-size: 18px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background: #f0fdfa;
+}
+
+.top3 {
+  font-weight: bold;
+  color: #1f8f87;
+}
+
+.footer {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>📢DYNAMIND 2026📢</h1>
+  <h2>Dynamic Youth Mindset For Innovation And Development</h2>
+  <p>Pengumuman Finalis Lomba Esai</p>
+</div>
+
+<div class="container">
+
+  <button onclick="showSection('finalis')">🏆 Lihat Finalis</button>
+  <button onclick="showSection('nilai')">📊 Transparansi Nilai</button>
+
+  <!-- FINALIS -->
+  <div id="finalis" class="card hidden">
+    <h2>Finalis Lolos ke Semi Final</h2>
+
+    <p class="highlight">1. Tim ...</p>
+    <p class="highlight">2. Tim ...</p>
+    <p class="highlight">3. Tim ...</p>
+    <p class="highlight">4. Tim ...</p>
+    <p class="highlight">5. Tim ...</p>
+
+    <p style="margin-top:15px;">
+      Selamat kepada seluruh tim yang lolos ke babak Final!  
+      Persiapkan diri kalian untuk tahap <b>SEMI FINAL (Presentasi)</b>.
+      Untuk tim yang belum lolos dibabak ini jangan berkecil hati dan tetap semangat yaa!
+      Terimakasih banyak telah berpartisipasi🙌💕
+    </p>
+  </div>
+
+  <!-- NILAI -->
+  <div id="nilai" class="card hidden">
+    <h2>Transparansi Penilaian</h2>
+
+    <table>
+      <tr>
+        <th>Ranking</th>
+        <th>Nama Tim</th>
+        <th>Total</th>
+      </tr>
+
+      <tr class="top3">
+        <td>1</td>
+        <td>Tim ...</td>
+        <td>...</td>
+      </tr>
+      <tr class="top3">
+        <td>2</td>
+        <td>Tim ...</td>
+        <td>...</td>
+      </tr>
+      <tr class="top3">
+        <td>3</td>
+        <td>Tim ...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Tim ...</td>
+        <td>...</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>Tim ...</td>
+        <td>...</td>
+      </tr>
+
+    </table>
+
+    <p style="margin-top:15px; font-size: 14px;">
+      Kriteria Penilaian:<br>
+      Format Penilaian Abstrak (10%) • Gagasan (10%) • Pendahuluan (10%) • Tinjauan Pustaka (15%) • Analisa (20%) • Pembahasan (30%) • Penutup (5%)
+    </p>
+  </div>
+
+  <div class="footer">
+    © 2026 DYNAMIND Dinamis 6.0
+  </div>
+
+</div>
+
+<script>
+function showSection(id) {
+  document.getElementById("finalis").classList.add("hidden");
+  document.getElementById("nilai").classList.add("hidden");
+
+  document.getElementById(id).classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
